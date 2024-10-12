@@ -25,23 +25,23 @@ class CustomTextField extends StatelessWidget {
           hintStyle: const TextStyle(color: Colors.grey),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(4),
-            borderSide: const BorderSide(color: Colors.grey, width: 1.2),
+            borderSide: const BorderSide(color: Colors.black, width: 1.2),
           ),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(4),
-            borderSide: const BorderSide(color: Colors.grey, width: 1.2),
+            borderSide: const BorderSide(color: Colors.black, width: 1.2),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(4),
-            borderSide: const BorderSide(color: Colors.grey, width: 1.2),
+            borderSide: const BorderSide(color: Colors.black, width: 1.2),
           ),
           disabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(4),
-            borderSide: const BorderSide(color: Colors.grey, width: 1.2),
+            borderSide: const BorderSide(color: Colors.black, width: 1.2),
           ),
           errorBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(4),
-            borderSide: const BorderSide(color: Colors.grey, width: 1.2),
+            borderSide: const BorderSide(color: Colors.black, width: 1.2),
           )),
     );
   }
