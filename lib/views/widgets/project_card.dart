@@ -6,7 +6,10 @@ class ProjectCard extends StatelessWidget {
   final String img;
 
   const ProjectCard(
-      {required this.title, required this.description, required this.img});
+      {super.key,
+      required this.title,
+      required this.description,
+      required this.img});
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +33,7 @@ class ProjectCard extends StatelessWidget {
         children: [
           Text(
             title,
-            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            style: const TextStyle(fontSize: 18, fontFamily: 'RubikWetPaint'),
           ),
           const SizedBox(height: 5),
           Container(
@@ -41,8 +44,11 @@ class ProjectCard extends StatelessWidget {
                     image: AssetImage(img), fit: BoxFit.contain)),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20.0,vertical: 10),
-            child: Text(description),
+            padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
+            child: Text(
+              description,
+              style: TextStyle(fontFamily: 'RubikWetPaint'),
+            ),
           ),
         ],
       ),

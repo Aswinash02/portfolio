@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_portfolio/controllers/home_controller.dart';
 import 'package:my_portfolio/views/home_screen.dart';
+import 'package:my_portfolio/views/intro_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,7 +20,8 @@ class MyPortfolioApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Portfolio',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: const HomePage(),
+      home: const IntroScreen(),
+      // home: const HomePage(),
     );
   }
 }

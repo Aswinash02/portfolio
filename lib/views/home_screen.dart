@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/views/widgets/contact.dart';
-import 'package:my_portfolio/views/widgets/projects.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -19,15 +17,14 @@ class HomePage extends StatelessWidget {
               ),
               Align(
                 alignment: Alignment.center,
-                child: CircleAvatar(
-                  radius: 60,
-                  child: Container(
-                    decoration: const BoxDecoration(
-                        shape: BoxShape.circle,
-                        image: DecorationImage(
-                            image: AssetImage('asset/profile_img.png'),
-                            fit: BoxFit.contain)),
-                  ),
+                child: Container(
+                  height: 120,
+                  width: 120,
+                  decoration: const BoxDecoration(
+                      shape: BoxShape.circle,
+                      image: DecorationImage(
+                          image: AssetImage('asset/profile.png'),
+                          fit: BoxFit.fill)),
                 ),
               ),
               const SizedBox(height: 20),
@@ -47,14 +44,12 @@ class HomePage extends StatelessWidget {
                 "scalable design patterns.",
                 style: TextStyle(fontSize: 16),
               ),
-
               const SizedBox(height: 20),
               const Text(
                 'Skills',
                 style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 20),
-
               const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -89,9 +84,7 @@ class HomePage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 20),
-              const Projects(),
-              const SizedBox(height: 20),
-              const Contact(),
+
             ],
           ),
         ),
